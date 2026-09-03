@@ -1,0 +1,10 @@
+requests>=2.31
+python-dotenv>=1.0
+pdfplumber>=0.11
+pytest>=8.0
+pytest-mock>=3.14
+
+# Optional, needed only once you swap CSV tracking -> live Google Sheets / Gmail drafts:
+# gspread>=6.0
+# google-auth>=2.30
+# google-api-python-client>=2.130
