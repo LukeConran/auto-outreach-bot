@@ -33,22 +33,29 @@ XAI_FAST_MODEL = os.environ.get("XAI_FAST_MODEL", "grok-code-fast-1")  # cheap q
 INTERESTS = [
     "3D perception",
     "computer vision",
+    "autonomous driving / autonomous vehicles",
     "occupancy networks",
     "bird's eye view (BEV) perception",
-    "NeRF",
     "depth estimation",
     "SLAM",
+    "edge computing / on-device perception",
+    "medical imaging / 3D MRI",
+    "imbalanced classification",
     "robot learning",
+    "contrastive learning applications",
+    "CNNs",
 ]
 
 ARXIV_CATEGORIES = ["cs.CV", "cs.RO", "cs.LG"]
 
 # --- Your positioning block: used verbatim by the draft agent ---
 POSITIONING = """
-I'm a student/engineer interested in 3D perception and computer vision for robotics.
-GitHub: https://github.com/YOUR_USERNAME
-Resume: https://YOUR_RESUME_LINK
-Ask: a 15-minute call to learn about your work, or a referral/pointer to open roles.
+I'm Luke Conran, an Honors CS undergrad and Data Science master's student at Texas A&M (both 4.00 GPA). My work centers on ML, 3D perception, and computer vision — at World Wide Technology I built a pipeline that turns 150M+ point LiDAR clouds into engineering-grade CAD with classical geometry and vision-language models; at the OptMAI Lab I research 3D MRI classification for Alzheimer's staging with contrastive learning, and I'm writing a thesis on MCI→AD conversion that maximizes partial AUC in the high-sensitivity region clinicians use.
+
+I care as much about the surrounding pipeline and stakeholder problem as the model itself.
+Portfolio: https://www.lukeconran.dev
+GitHub: https://github.com/LukeConran
+Ask: Summer 2027 ML eng / applied science internship (new-grad roles from 2028) — a brief chat about your team's work, or a pointer to open roles.
 """.strip()
 
 # --- Guardrails ---
