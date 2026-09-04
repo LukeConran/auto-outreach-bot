@@ -42,6 +42,8 @@ INTERESTS = [
     "medical imaging / 3D MRI",
     "imbalanced classification",
     "robot learning",
+    "contrastive learning applications",
+    "CNNs",
 ]
 
 ARXIV_CATEGORIES = ["cs.CV", "cs.RO", "cs.LG"]
