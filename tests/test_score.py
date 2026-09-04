@@ -8,6 +8,19 @@ def test_score_candidate_parses_result(monkeypatch):
     assert result.rationale == "Direct overlap."
 
 
+def test_score_prompt_is_industry_networking_not_job():
+    prompt = score.score_prompt(
+        "positioning", "Occupancy Nets", "abstract",
+        affiliation="Waymo", company="Waymo",
+    )
+    lower = prompt.lower()
+    assert "networking" in lower
+    assert "referral" in lower
+    assert "internship" in lower
+    assert "llm" in lower and "rag" in lower
+    assert "waymo" in lower
+
+
 def test_score_candidate_clamps_out_of_range_scores(monkeypatch):
     monkeypatch.setattr(score, "chat_json", lambda *a, **k: {"score": 150, "rationale": "x"})
     assert score.score_candidate("p", "t", "a").score == 100
